@@ -1,0 +1,28 @@
+{
+  "name": "atg/seo",
+  "type": "phpbb-extension",
+  "description": "SEO urls",
+  "homepage": "http://www.aroundtheglobe.nl",
+  "version": "1.0.0",
+  "keywords": ["phpbb", "extension"],
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Erik van Erp",
+      "email": "erik@aroundtheglobe.nl",
+      "homepage": "http://www.aroundtheglobe.nl",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "composer/installers": "~1.0"
+  },
+  "extra": {
+    "display-name": "Around the Globe - SEO",
+    "soft-require": {
+      "phpbb/phpbb": ">=3.1.0-RC3"
+    }
+
+  }
+}

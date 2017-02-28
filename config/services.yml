@@ -1,0 +1,25 @@
+services:
+    atg.seo.core:
+        class: atg\seo\core
+        arguments:
+            - @config
+            - @request
+            - @user
+            - @auth
+            - %core.root_path%
+            - %core.php_ext%
+
+    atg.seo.listener:
+        class: atg\seo\event\listener
+        arguments:
+            - @atg.seo.core
+            - @config
+            - @auth
+            - @template
+            - @user
+            - @request
+            - @dbal.conn
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
